@@ -1,0 +1,32 @@
+<div>
+  <section class='section'>
+    <h1 class='title'>Good day, {{name}} </h1>
+  </section>
+    <main class='container'>
+      {{#each posts as |post|}}
+
+        <div class='card'>
+          <div class='card-body'>
+            <div class='card-tile'><a href='/post/{{post.id}}'>
+                  <p>{{post.title}}</p></a>
+              <div class='card-body'>
+                <p>Posted on
+                  {{format_date post.date_created}}</p>
+              </div>
+            </div>
+            <div>
+              <a href='/edit/{{id}}' data-id='{{post.id}}'><button
+                  class='btn btn-secondary'
+                >Edit</button>
+              </a>
+              <button
+                data-id={{post.id}}
+                class='btn btn-secondary destroy'
+              >Delete</button>
+            </div>
+          </div>
+        </div>
+      {{/each}}
+    </main>
+</div>
+<script src='./js/profile.js'></script>

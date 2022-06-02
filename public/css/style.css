@@ -1,0 +1,25 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.card {
+  padding: 1rem;
+  margin: 1rem;
+}
+
+p {
+  margin: 1rem;
+}
+.full-size {
+  height: 100vh;
+}
+
+.form-height {
+  height: 50vh;
+}
+
+.main {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
